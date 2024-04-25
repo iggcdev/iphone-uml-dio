@@ -1,8 +1,9 @@
 # Iphone - Desafio de Codigo Dio.me - Java
 
 A classe `Iphone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`. Ela simula um iPhone com funcionalidades de reprodução de música, chamadas telefônicas e navegação na internet.
-
-
+<div align="center">
+<img height="400" src="C:\Users\ivoga\Desktop\projetos\iphone-uml-dio\assets\iphoneClassUmlJava.png" width="600"/>
+</div>
 ### Métodos
 
 #### ReprodutorMusical
