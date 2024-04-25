@@ -2,7 +2,7 @@
 
 A classe `Iphone` implementa as interfaces `ReprodutorMusical`, `AparelhoTelefonico` e `NavegadorInternet`. Ela simula um iPhone com funcionalidades de reprodução de música, chamadas telefônicas e navegação na internet.
 
-
+![Diagrama UML Iphone][assets/iphoneClassUmlJava.png]
 ### Métodos
 
 #### ReprodutorMusical
