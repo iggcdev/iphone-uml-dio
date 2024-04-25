@@ -48,6 +48,7 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     @Override
     public String tocar() {
         if (musicaSelecionada == null) {
+            tocandoMusica = false;
             return "Nenhuma musica selecionada.";
         } else {
             if (tocandoMusica) {
@@ -64,6 +65,7 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
             return "Nenhuma musica selecionada.";
         } else {
             if (tocandoMusica) {
+                tocandoMusica = false;
                 return String.format("%s pausada.", musicaSelecionada);
             }
             else {
@@ -76,5 +78,24 @@ public class Iphone implements ReprodutorMusical, AparelhoTelefonico, NavegadorI
     public String selecionarMusica(String musica) {
         musicaSelecionada = musica;
         return String.format("%s selecionado.",musica);
+    }
+
+    public static void main(String[] args) {
+        Iphone iphone = new Iphone();
+        System.out.println(iphone.selecionarMusica("Pink Floyd - Time"));
+        System.out.println(iphone.tocar());
+        System.out.println(iphone.pausar());
+
+        System.out.println(iphone.ligar("12345678"));
+        System.out.println(iphone.atenderLigacao("778899"));
+        System.out.println(iphone.iniciarCorreioDeVoz("Ola, voce esta ai?","998877"));
+
+        System.out.println(iphone.exibirPagina("google.com"));
+        System.out.println(iphone.atualizarPagina());
+        System.out.println(iphone.adicionarNovaAba("x.com"));
+
+
+
+
     }
 }
